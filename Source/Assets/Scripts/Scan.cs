@@ -28,7 +28,8 @@ public class Scan : MonoBehaviour
     {
         RaycastHit hit;
 
-        float[] anglesY = {0.0f, 22.5f, 45, -45, -22.5f };
+//        float[] anglesY = {0.0f, 22.5f, 45, -45, -22.5f };
+        float[] anglesY = { 0.0f, 10f, 20f, 30f, 40f, -40, -30, -20f, -10};
         float[] anglesX = {-1, -30};
 
 
