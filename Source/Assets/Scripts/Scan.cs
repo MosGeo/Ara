@@ -29,28 +29,26 @@ public class Scan : MonoBehaviour
         RaycastHit hit;
 
 //        float[] anglesY = {0.0f, 22.5f, 45, -45, -22.5f };
-        float[] anglesY = { 0.0f, 10f, 20f, 30f, 40f, -40, -30, -20f, -10};
-        float[] anglesX = {-1, -30};
+        float[] anglesY        = { 0.0f, 10f, 20f, 30f, 40f, -40, -30, -20f, -10, 0.0f, 10f, 20f, 30f, 40f, -40, -30, -20f, -10};
+        float[] anglesX        = {   -1,  -1,  -1,  -1,  -1,  -1,  -1,   -1,  -1,  -30, -30, -30, -30, -30, -30, -30,  -30, -30};
+        float[] volumeModifier = {    2,   1,   1,   1,   1,   1,   1,    1,   1,    1,   1,   1,   1,   1,   1,   1,    1,   1};
 
 
         for (int i = 0; i < anglesY.Length; i += 1)
         {
             Vector3 direction = createScanDirectionY(transform.TransformDirection(Vector3.forward), anglesY[i]);
-
-            for (int j = 0; j < anglesX.Length; j += 1)
-            {
-                direction = createScanDirectionX(direction, anglesX[j]);
+            direction = createScanDirectionX(direction, anglesX[i]);
                 if (Physics.Raycast(transform.position, direction, out hit, maxDistance))
                 {
                     Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                    initializeAudioSource(hit);
+                    initializeAudioSource(hit, volumeModifier[i]);
                 }
-            }
+            
         }
 
     }
 
-    void initializeAudioSource(RaycastHit hit)
+    void initializeAudioSource(RaycastHit hit, float volumeModifier=1)
     {
         string audioFileName = "Audio/WhiteNoise";
         GameObject audioSourceGO = new GameObject();
@@ -60,7 +58,7 @@ public class Scan : MonoBehaviour
         audioSource.clip = Resources.Load(audioFileName) as AudioClip;
         float startTime = Random.Range(0.0f, audioSource.clip.length);
         audioSource.time = startTime;
-        audioSource.volume = (maxDistance -  hit.distance)/maxDistance;
+        audioSource.volume = (maxDistance -  hit.distance)* volumeModifier/ maxDistance;
         audioSource.volume = Mathf.Max(0, audioSource.volume);
         audioSource.dopplerLevel = 0;
         audioSource.spatialBlend = 1;
