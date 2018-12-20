@@ -1,5 +1,5 @@
 # Project Ara
-This is a prototype for complete hardware/software system to help blind navigate new environment using spatial sound.
+This is a prototype for complete hardware/software system to help the blind and low vision people navigate new environment using spatial sound.
 
 ## Product vision
 The complete vison for the product includes a combination of hardware and software. Specifically:
