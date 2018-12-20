@@ -7,6 +7,9 @@ The complete vison for the product includes a combination of hardware and softwa
 2. Headphones: Headphones with variable noise cancellation (e.g. surface headphones), or bone conduction headphones (to allow user to hear the outside world at the same time)
 3. Spatial audio generator: Unity spatial audio
 
+## Plan for software improvments/testing
+Create an endless runner game that everybody can play on thier phones. This game will be used as a test bed for ideas (e.g., what kind of sound work best...)
+
 ## How to compile
 The code is written in Unity3D.
   
