@@ -18,6 +18,9 @@ Create an endless runner game that everybody can play on thier phones. This game
 
 ## How to compile
 The code is written in Unity3D.
+
+## Where is the project now
+For the time being, I am focused on finishing off my PhD. I will get back to it in a couple of months.
   
 ## License
 The project is licensed under the GPL license. 
