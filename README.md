@@ -8,4 +8,4 @@ The complete vison for the product includes a combination of hardware and softwa
 3. Spatial audio generator: Unity spatial audio
   
 ## License
-GPL 
+The project is licensed under the GPL license. 
