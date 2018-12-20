@@ -8,13 +8,13 @@ The complete vison for the product includes a combination of hardware and softwa
 3. Spatial audio generator software: Unity spatial audio
 
 ## Concept of spatial audio generation
-use raycasts from the user head. if the raycast hit something, generate audio in the location (i.e. spatial audio) of the contact with volume (or another parameter) depending on the distance.
+Use raycasts from the user head at multiple angels. if the raycast hit something, generate audio in the location (i.e. spatial audio) of the contact with volume (or another parameter) depending on the distance.
 
 ## Objective of prototype
 Can the user navigate the maze without hitting the wall?
 
 ## Plan for software improvments/testing
-Create an endless runner game that everybody can play on thier phones. This game will be used as a test bed for ideas (e.g., what kind of sound work best...)
+Create an endless runner game or a maze that everybody can play on thier phones. This game will be used as a test bed for ideas (e.g., what kind of sound work best and at what levels...)
 
 ## How to compile
 The code is written in Unity3D.
