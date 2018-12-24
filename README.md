@@ -1,5 +1,5 @@
 # Project Ara
-This is a prototype for complete hardware/software system to help the blind and low vision people navigate new environment using spatial sound. See it in action:
+This is a prototype for complete hardware/software system to help the blind and low vision people navigate new environment using spatial sound. The hypothesis is that after some time of using the system, sensory substitution will occur in the brain will be able to automatically envision the image (https://en.wikipedia.org/wiki/Sensory_substitution). See it in action:
 
 https://www.youtube.com/watch?v=wnokEU0vZD8&feature=youtu.be
 
